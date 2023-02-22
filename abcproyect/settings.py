@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.manage_post',
     'apps.user',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#URL publica para los archivos MEDIA
+
+MEDIA_URL = '/media/'
+
+#Ubicacion de guardado
+
+MEDIA_ROOT = BASE_DIR / 'media'
